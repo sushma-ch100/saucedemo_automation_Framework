@@ -1,0 +1,5 @@
+com/qa/pages/LoginPage.class
+com/qa/base/BaseTest.class
+com/qa/tests/LoginTest.class
+com/qa/tests/AddToCartTest.class
+com/qa/tests/CheckoutTest.class
