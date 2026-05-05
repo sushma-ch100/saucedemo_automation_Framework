@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
-Test set: TestSuite
+Test set: com.qa.tests.EmptyCartCheckoutTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.033 s <<< FAILURE! - in TestSuite
-com.qa.tests.LoginTest.validLoginTest  Time elapsed: 0.139 s  <<< FAILURE!
-java.lang.AssertionError: Login failed expected [true] but found [false]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.229 s <<< FAILURE! - in com.qa.tests.EmptyCartCheckoutTest
+com.qa.tests.EmptyCartCheckoutTest.emptyCartCheckoutTest  Time elapsed: 1.576 s  <<< FAILURE!
+java.lang.AssertionError: BUG: User is allowed to proceed to checkout with an empty cart expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.qa.tests.LoginTest.validLoginTest(LoginTest.java:19)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.qa.tests.EmptyCartCheckoutTest.emptyCartCheckoutTest(EmptyCartCheckoutTest.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -34,8 +34,8 @@ java.lang.AssertionError: Login failed expected [true] but found [false]
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)

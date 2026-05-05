@@ -2,9 +2,10 @@
 <suite name="SauceDemo Automation Suite">
     <test name="SauceDemo Tests">
         <classes>
-            <class name="com.qa.tests.LoginTest"/>
+            <class name="com.qa.tests.LoginTest"/> 
             <class name="com.qa.tests.AddToCartTest"/>
             <class name="com.qa.tests.CheckoutTest"/>
+            <class name="com.qa.tests.EmptyCartCheckoutTest"/>
         </classes>
     </test>
 </suite>

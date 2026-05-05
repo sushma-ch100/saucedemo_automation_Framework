@@ -2,4 +2,5 @@
 /Users/sushmachagarlamudi/Desktop/saucedemo-automation-framework/saucedemo-automation-framework/src/test/java/com/qa/pages/LoginPage.java
 /Users/sushmachagarlamudi/Desktop/saucedemo-automation-framework/saucedemo-automation-framework/src/test/java/com/qa/tests/AddToCartTest.java
 /Users/sushmachagarlamudi/Desktop/saucedemo-automation-framework/saucedemo-automation-framework/src/test/java/com/qa/tests/CheckoutTest.java
+/Users/sushmachagarlamudi/Desktop/saucedemo-automation-framework/saucedemo-automation-framework/src/test/java/com/qa/tests/EmptyCartCheckoutTest.java
 /Users/sushmachagarlamudi/Desktop/saucedemo-automation-framework/saucedemo-automation-framework/src/test/java/com/qa/tests/LoginTest.java

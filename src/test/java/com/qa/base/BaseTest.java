@@ -58,17 +58,20 @@ public class BaseTest {
         }
     }
 
-    @AfterMethod
-    public void tearDown(ITestResult result) throws InterruptedException {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            System.out.println("Test failed. Taking screenshot...");
-            takeScreenshot(result.getName());
-        }
+   @AfterMethod
+public void tearDown(ITestResult result) throws InterruptedException {
 
-        Thread.sleep(2000);
+    System.out.println("Test Status: " + result.getStatus());
 
-        if (driver != null) {
-            driver.quit();
-        }
+    if (result.getStatus() == ITestResult.FAILURE) {
+        System.out.println("Test failed. Taking screenshot...");
+        takeScreenshot(result.getName());
+    }
+
+    Thread.sleep(2000);
+
+    if (driver != null) {
+        driver.quit();
     }
 }
+} 
