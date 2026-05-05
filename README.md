@@ -34,5 +34,9 @@ src/test/java/com/qa
 - Cross-browser ready structure
 - Clean and scalable framework
 
+## Test Reports & Artifacts
+- Test execution reports are available under `artifacts/reports`
+- Failure screenshots are saved under `artifacts/screenshots`
+
 ## Author
 Sushma Chagarlamudi
