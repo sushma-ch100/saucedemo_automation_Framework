@@ -1,49 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-05T13:01:26 EDT" name="Surefire suite" finished-at="2026-05-05T13:01:45 EDT" duration-ms="18668">
+  <suite started-at="2026-05-05T14:37:19 EDT" name="Surefire suite" finished-at="2026-05-05T14:37:59 EDT" duration-ms="39655">
     <groups>
     </groups>
-    <test started-at="2026-05-05T13:01:26 EDT" name="Surefire test" finished-at="2026-05-05T13:01:45 EDT" duration-ms="18668">
+    <test started-at="2026-05-05T14:37:19 EDT" name="Surefire test" finished-at="2026-05-05T14:37:59 EDT" duration-ms="39655">
       <class name="com.qa.tests.AddToCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AddToCartTest@14ec4505]" started-at="2026-05-05T13:01:39 EDT" name="setup" finished-at="2026-05-05T13:01:41 EDT" duration-ms="2609" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.AddToCartTest@358c99f5]" started-at="2026-05-05T14:37:50 EDT" name="setup" finished-at="2026-05-05T14:37:57 EDT" duration-ms="6356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCartTest()[pri:0, instance:com.qa.tests.AddToCartTest@14ec4505]" started-at="2026-05-05T13:01:41 EDT" name="addToCartTest" finished-at="2026-05-05T13:01:42 EDT" duration-ms="160" status="PASS">
+        <test-method signature="addToCartTest()[pri:0, instance:com.qa.tests.AddToCartTest@358c99f5]" started-at="2026-05-05T14:37:57 EDT" name="addToCartTest" finished-at="2026-05-05T14:37:57 EDT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.AddToCartTest@14ec4505]" started-at="2026-05-05T13:01:42 EDT" name="tearDown" finished-at="2026-05-05T13:01:45 EDT" duration-ms="3109" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.tests.AddToCartTest@358c99f5]" started-at="2026-05-05T14:37:57 EDT" name="tearDown" finished-at="2026-05-05T14:37:59 EDT" duration-ms="2091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTest status=SUCCESS method=AddToCartTest.addToCartTest()[pri:0, instance:com.qa.tests.AddToCartTest@358c99f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.AddToCartTest -->
       <class name="com.qa.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.LoginTest@e50a6f6]" started-at="2026-05-05T13:01:34 EDT" name="setup" finished-at="2026-05-05T13:01:36 EDT" duration-ms="1391" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.LoginTest@53ca01a2]" started-at="2026-05-05T14:37:38 EDT" name="setup" finished-at="2026-05-05T14:37:48 EDT" duration-ms="10174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.qa.tests.LoginTest@e50a6f6]" started-at="2026-05-05T13:01:36 EDT" name="validLoginTest" finished-at="2026-05-05T13:01:36 EDT" duration-ms="133" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:com.qa.tests.LoginTest@53ca01a2]" started-at="2026-05-05T14:37:48 EDT" name="validLoginTest" finished-at="2026-05-05T14:37:48 EDT" duration-ms="151" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.qa.tests.LoginTest.validLoginTest(LoginTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@e50a6f6]" started-at="2026-05-05T13:01:36 EDT" name="tearDown" finished-at="2026-05-05T13:01:39 EDT" duration-ms="3118" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.tests.LoginTest@53ca01a2]" started-at="2026-05-05T14:37:48 EDT" name="tearDown" finished-at="2026-05-05T14:37:50 EDT" duration-ms="2572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=FAILURE method=LoginTest.validLoginTest()[pri:0, instance:com.qa.tests.LoginTest@53ca01a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.LoginTest -->
       <class name="com.qa.tests.CheckoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.CheckoutTest@36f0f1be]" started-at="2026-05-05T13:01:26 EDT" name="setup" finished-at="2026-05-05T13:01:30 EDT" duration-ms="4268" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.CheckoutTest@6ee12bac]" started-at="2026-05-05T14:37:19 EDT" name="setup" finished-at="2026-05-05T14:37:22 EDT" duration-ms="2447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkoutFlowTest()[pri:0, instance:com.qa.tests.CheckoutTest@36f0f1be]" started-at="2026-05-05T13:01:30 EDT" name="checkoutFlowTest" finished-at="2026-05-05T13:01:31 EDT" duration-ms="700" status="PASS">
+        <test-method signature="checkoutFlowTest()[pri:0, instance:com.qa.tests.CheckoutTest@6ee12bac]" started-at="2026-05-05T14:37:22 EDT" name="checkoutFlowTest" finished-at="2026-05-05T14:37:35 EDT" duration-ms="13517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutFlowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.CheckoutTest@36f0f1be]" started-at="2026-05-05T13:01:31 EDT" name="tearDown" finished-at="2026-05-05T13:01:34 EDT" duration-ms="3159" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.tests.CheckoutTest@6ee12bac]" started-at="2026-05-05T14:37:35 EDT" name="tearDown" finished-at="2026-05-05T14:37:37 EDT" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutFlowTest status=SUCCESS method=CheckoutTest.checkoutFlowTest()[pri:0, instance:com.qa.tests.CheckoutTest@6ee12bac] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

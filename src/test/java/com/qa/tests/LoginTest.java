@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
         System.out.println("Test started...");
 
         LoginPage login = new LoginPage(driver);
-        login.login("standard_user", "secret_sauce");
+        login.login("standarduser", "secret_sauce");
 
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("inventory"), "Login failed");
